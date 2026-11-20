@@ -52,73 +52,128 @@ h1 {
 #category:focus {
     animation: dropdown-pop 220ms ease;
     box-shadow: 0 4px 12px rgba(35, 26, 20, 0.15);
-
 }
 
 
 #idea {
+    width: 260px;
+    padding: 8px;
 }
 
 
 #idea-form button {
+    padding: 9px 12px;
 }
 
 
 h2 {
+    margin: 0 0 12px;
 }
 
 
 .tank-area {
+    max-width: 680px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 24px;
+    align-items: start;
 }
 
 
 .fishbowl {
+    position: relative;
+    height: 290px;
+    overflow: hidden;
+    border: 6px solid rgba(35, 26, 20, 0.18);
+    border-top: 3px solid rgba(35, 26, 20, 0.25);
+    border-radius: 48% 48% 43% 43%;
+    background: rgba(255, 255, 255, 0.35);
 }
-
-
-.bowl-water {
-}
-
 
 #bowl-ideas {
+    position: absolute;
+    z-index: 2;
+    left: 18px;
+    right: 18px;
+    bottom: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
 }
 
 
 .bowl-word {
+    display: inline-block;
+    max-width: 190px;
+    padding: 7px 10px;
+    overflow-wrap: anywhere;
+    border: 1px solid rgba(35, 26, 20, 0.25);
+    border-radius: 5px;
+    background: var(--alabaster);
+    color: var(--espresso);
+    font-size: 13px;
+    box-shadow: 0 3px 7px rgba(35, 26, 20, 0.08);
+    animation: drop-in 280ms ease-out;
 }
 
 
 .idea-panel {
+    min-height: 290px;
+    padding: 16px;
+    border: 1px solid rgba(35, 26, 20, 0.15);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.55);
 }
 
 
 #tank {
+    margin: 0;
+    padding-left: 20px;
 }
 
 
 #tank li {
+    margin: 10px 0;
 }
 
 
 .idea-item {
+    animation: drop-in 280ms ease-out;
 }
 
 
 #submit-tank {
+    grid-column: 1 / -1;
+    justify-self: center;
+    min-width: 220px;
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 6px;
+    background: var(--espresso);
+    color: white;
+    cursor: pointer;
+
 }
 
 
 #results {
+    max-width: 680px;
+    margin: 12px auto 30px;
 }
 
 
 #results li {
+    margin: 12px 0;
 }
 
 
 p {
+    text-align: center;
 }
 
 
 a {
+    color: var(--amber);
 }
