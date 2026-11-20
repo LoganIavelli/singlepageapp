@@ -1,4 +1,6 @@
-/* AI Disclosure: AI was used to help summarize and understand the documentation and aid in helping implement it into the code where I ran into issues.*/
+/* AI Disclosure: AI was used to help summarize and understand the documentation and aid in helping implement it into the code where I ran into issues.
+
+Every prompt used with AI had been posed as learning-based questions rather than commands to help guide me in my development process. (I still am very bad with JS)*/
 
 const API_ROOT = "https://mcp.10ml.com";
 const form = document.querySelector("#idea-form");
