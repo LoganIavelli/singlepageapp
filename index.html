@@ -1,1 +1,44 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frag Tank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Frag Tank</h1>
+        <p>Find your next fragrance by putting your thoughts in the tank!</p>
+    </header>
+    <main>
+        <form id="idea-form">
+        <label for="category">Category</label>
+        <select id="category">
+            <option value="season">Season</option>
+            <option value="style">Style</option>
+            <option value="notes">Notes</option>
+        </select>
+        <label for="idea">Idea</label>
+        <input id="idea" type="text" maxlength="80" placeholder="Example: summer" required>
+        <button type="submit">Add to tank</button>
+        </form>
+        <section class="tank-area">
+        <div class="fishbowl" aria-label="Idea tank">
+            <div class="bowl-water"></div>
+            <div id="bowl-ideas"></div>
+        </div>
+        <aside class="idea-panel">
+            <h2>Ideas in the tank</h2>
+            <ul id="tank"></ul>
+        </aside>
+        <button id="submit-tank" type="button">Find my top 3 fragrances</button>
+        </section>
+    </main>
+    <footer>
+        <ol id="results"></ol>
+        <p><a href="https://10ml.com/perfume-api" target="_blank" rel="noreferrer">Data: 10ML Fragrance Index</a></p>
+        <script src="index.js"></script>
+    </footer>
+</body>
+</html>
